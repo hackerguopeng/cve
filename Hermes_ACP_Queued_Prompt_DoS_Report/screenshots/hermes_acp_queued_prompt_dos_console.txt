@@ -1,0 +1,7 @@
+﻿[2026-07-08 08:46:32] attack_start ACP prompt queue amplification queued=900
+[2026-07-08 08:46:32] active_agent_task=Please perform a long-running repository investigation and keep working until complete.
+[2026-07-08 08:46:32] queued_agent_task_pattern=After the current investigation, inspect module <N> and prepare concrete evidence.
+[2026-07-08 08:46:34] queued_ack_messages=900 last_ack=Queued for the next turn. (900 queued)
+[2026-07-08 08:46:34] model_calls=901 tool_calls=901 history_messages=1802
+[2026-07-08 08:46:34] RESULT=REPRODUCED
+

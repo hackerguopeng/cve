@@ -1,0 +1,8 @@
+﻿[2026-07-08 08:46:32] attack_start ACP shared executor unavailable within 250ms client deadline
+[2026-07-08 08:46:32] active_agent_task=Please perform a long-running repository investigation and keep working until complete.
+[2026-07-08 08:46:32] queued_agent_task_pattern=After the current investigation, inspect module <N> and prepare concrete evidence.
+[2026-07-08 08:46:41] baseline_probe_ms=27.14 saturated_probe_ms=250.64 probe_completed=False
+[2026-07-08 08:46:41] SERVICE_UNAVAILABLE detail=TimeoutError after 250ms client deadline
+[2026-07-08 08:46:41] SERVICE_UNAVAILABLE shared_executor_blocked attack_model_calls=36
+[2026-07-08 08:46:41] RESULT=REPRODUCED_SHARED_EXECUTOR_UNAVAILABLE_WITHIN_CLIENT_DEADLINE
+
