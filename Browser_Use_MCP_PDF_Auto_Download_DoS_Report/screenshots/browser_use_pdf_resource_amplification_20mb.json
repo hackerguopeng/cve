@@ -1,0 +1,73 @@
+{
+  "download_dir_bytes_after": 20971520,
+  "download_dir_bytes_before": 0,
+  "download_dir_growth_bytes": 20971520,
+  "entry": "browser_navigate",
+  "mcp": {
+    "elapsed_ms": 11402,
+    "mcp_pid": 8,
+    "tool_text": "Navigated to: http://127.0.0.1:8765/poc.pdf",
+    "top_processes_after": [
+      {
+        "cmdline": "/usr/lib/chromium/chromium --type=renderer --crashpad-handler-pid=31 --enable-crash-reporter=,built on Debian GNU/Linux 13 (trixie) --noerrdialogs --user-data-dir=/root/.config/bro",
+        "name": "chromium",
+        "pid": 133,
+        "rss_mb": 646.13
+      },
+      {
+        "cmdline": "/usr/lib/chromium/chromium --type=renderer --crashpad-handler-pid=31 --enable-crash-reporter=,built on Debian GNU/Linux 13 (trixie) --noerrdialogs --user-data-dir=/root/.config/bro",
+        "name": "chromium",
+        "pid": 171,
+        "rss_mb": 226.25
+      },
+      {
+        "cmdline": "/usr/lib/chromium/chromium --show-component-extension-options --enable-gpu-rasterization --no-default-browser-check --disable-pings --media-router=0 --disable-dev-shm-usage --enabl",
+        "name": "chromium",
+        "pid": 16,
+        "rss_mb": 223.77
+      },
+      {
+        "cmdline": "/usr/lib/chromium/chromium --type=renderer --crashpad-handler-pid=31 --enable-crash-reporter=,built on Debian GNU/Linux 13 (trixie) --noerrdialogs --user-data-dir=/root/.config/bro",
+        "name": "chromium",
+        "pid": 153,
+        "rss_mb": 177.65
+      },
+      {
+        "cmdline": "/usr/local/bin/python -m browser_use.mcp",
+        "name": "python",
+        "pid": 8,
+        "rss_mb": 136.45
+      },
+      {
+        "cmdline": "/usr/lib/chromium/chromium --type=gpu-process --disable-gpu-sandbox --no-sandbox --disable-dev-shm-usage --disable-breakpad --enable-gpu-rasterization --headless=new --ozone-platfo",
+        "name": "chromium",
+        "pid": 55,
+        "rss_mb": 103.76
+      },
+      {
+        "cmdline": "/usr/lib/chromium/chromium --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --disable-dev-shm-usage --use-angle=",
+        "name": "chromium",
+        "pid": 56,
+        "rss_mb": 97.74
+      },
+      {
+        "cmdline": "/usr/lib/chromium/chromium --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --no-sandbox --disable-dev-shm-usage --use-ang",
+        "name": "chromium",
+        "pid": 77,
+        "rss_mb": 80.84
+      }
+    ],
+    "tree_rss_after_mb": 1692.59,
+    "tree_rss_before_mb": 754.25
+  },
+  "recent_pdf_files": [
+    {
+      "bytes": 20971520,
+      "path": "/root/Downloads/browser-use-mcp/poc.pdf"
+    }
+  ],
+  "root_user_requests": 1,
+  "served_pdf_bytes": 20971520,
+  "target_url": "http://127.0.0.1:8765/poc.pdf",
+  "warmup_url": "http://127.0.0.1:8765/health"
+}

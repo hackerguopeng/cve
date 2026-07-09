@@ -1,0 +1,11 @@
+[2026-07-09 11:30:53] attack_start browser-use MCP PDF auto-download service unavailable size=50MB memory=1g client_deadline_sec=60
+[2026-07-09 11:30:53] agent_task=Please open and inspect the PDF document at http://127.0.0.1:8765/poc.pdf. Use the browser navigation tool first, wait for the document to load, and then tell me whether it is accessible.
+[2026-07-09 11:30:53] tool_call=browser_navigate target=http://127.0.0.1:8765/poc.pdf
+[2026-07-09 11:31:54] served_pdf_bytes=52428800
+[2026-07-09 11:31:54] browser_navigate_completed=false docker_run_exit_code=124
+[2026-07-09 11:31:54] container_memory_limit_bytes=1073741824
+[2026-07-09 11:31:54] container_stats mem=1013MiB / 1GiB mem_percent=98.92% cpu=1453.91%
+[2026-07-09 11:31:54] container_status=running container_oom_killed=false container_exit_code=0
+[2026-07-09 11:31:54] service_probe=browser_navigate completed=false deadline_sec=60
+[2026-07-09 11:31:54] SERVICE_UNAVAILABLE detail=browser_navigate did not return within the client deadline
+[2026-07-09 11:31:54] RESULT=REPRODUCED_SERVICE_UNAVAILABLE

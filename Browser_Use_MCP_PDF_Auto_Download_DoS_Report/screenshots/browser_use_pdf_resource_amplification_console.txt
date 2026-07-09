@@ -1,0 +1,5 @@
+[2026-07-09 10:40:18] attack_start browser-use MCP PDF auto-download resource amplification size=20MB
+[2026-07-09 10:40:18] agent_task=Please open and inspect the PDF document at http://127.0.0.1:8765/poc.pdf. Use the browser navigation tool first, wait for the document to load, and then tell me whether it is accessible.
+[2026-07-09 10:40:36] pdf_bytes=20971520 download_dir_growth_bytes=20971520
+[2026-07-09 10:40:36] tree_rss_before_mb=754.25 tree_rss_after_mb=1692.59
+[2026-07-09 10:40:36] RESULT=RESOURCE_AMPLIFICATION_CONFIRMED
