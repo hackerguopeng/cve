@@ -1,0 +1,20 @@
+21:02:30 [scope] local-only reproduction: Edge extension + 127.0.0.1 web page + local Ollama
+21:02:30 [limits] one Nanobrowser task, one Navigator Ollama request, health_timeout=5s forward_timeout=30s total_timeout=90s
+21:02:30 [ollama] upstream=http://127.0.0.1:11434 model=llama3.2:3b
+21:02:30 [baseline] Ollama health before task: {"ok": true, "status": 200, "elapsed_ms": 271, "body": "{\"model\":\"llama3.2:3b\",\"created_at\":\"2026-07-10T13:02:30.3289096Z\",\"response\":\"Health\",\"done\":true,\"done_reason\":\"length\",\"context\":[128006,9125,128007,271,3876"}
+21:02:30 [planner-mock] listening=http://127.0.0.1:8789/v1
+21:02:30 [ollama-proxy] listening=http://127.0.0.1:11435 -> http://127.0.0.1:11434
+21:02:31 [edge] loaded Nanobrowser extension id=emmifdpghgfbpfeibfokaggpdfegdgmp
+21:02:34 [edge] active tab before task: {"ok": true, "target": {"active": true, "audible": false, "autoDiscardable": true, "discarded": false, "frozen": false, "groupId": -1, "height": 809, "highlighted": true, "id": 1994593987, "incognito": false, "index": 2, "lastAccessed": 1783688552402.272, "mutedInfo": {"muted": false}, "pinned": false, "selected": true, "splitViewId": -1, "status": "complete", "title": "Nanobrowser message budget DoS local proof", "url": "http://127.0.0.1:8010/dos.html?repeat=1100000", "width": 1338, "windowId": 1994593981}, "active": [{"active": true, "audible": false, "autoDiscardable": true, "discarded": false, "frozen": false, "groupId": -1, "height": 809, "highlighted": true, "id": 1994593987, "incognito": false, "index": 2, "lastAccessed": 1783688552402.272, "mutedInfo": {"muted": false}, "pinned": f
+21:02:34 [nanobrowser] sent side-panel new_task
+21:02:34 [planner-mock] request body_bytes=9724 message_chars=9079 max_message_chars=7000
+21:02:35 [ollama-proxy] request path=/api/chat body_bytes=1120328 model=llama3.2:3b message_chars=1111739 max_message_chars=1101715
+21:02:35 [evidence] large Navigator request reached Ollama proxy: {"ts": "2026-07-10T13:02:35Z", "method": "POST", "path": "/api/chat", "content_length": 1120328, "model": "llama3.2:3b", "message_count": 7, "message_chars": 1111739, "max_message_chars": 1101715, "message_lengths": [9170, 277, 15, 0, 15, 38, 1101715], "roles": ["system", "user", "user", "assistant", "tool", "user", "user"]}
+21:02:40 [probe] TIMEOUT: ordinary Ollama health request exceeded 5s while large prompt was active
+21:03:05 [ollama-proxy] upstream timeout after 30s path=/api/chat
+21:03:12 [recovery] RECOVERED: {"ok": true, "status": 200, "elapsed_ms": 28469, "body": "{\"model\":\"llama3.2:3b\",\"created_at\":\"2026-07-10T13:03:12.1913567Z\",\"response\":\"Health\",\"done\":true,\"done_reason\":\"length\",\"context\":[128006,9125,128007,271,3876"}
+21:03:12 [SUCCESS] bounded local Ollama reproduction completed
+21:03:13 [artifact] cli_log=E:\agent_vul\reports\Nanobrowser_Message_Budget_DoS_Report\lab\ollama_cli_repro.txt
+21:03:13 [artifact] cli_screenshot=E:\agent_vul\reports\Nanobrowser_Message_Budget_DoS_Report\screenshots\nanobrowser_ollama_cli_repro.png
+21:03:13 [artifact] browser_cli_screenshot=E:\agent_vul\reports\Nanobrowser_Message_Budget_DoS_Report\screenshots\nanobrowser_ollama_cli_repro_browser.png
+21:03:13 [artifact] proxy_log=E:\agent_vul\reports\Nanobrowser_Message_Budget_DoS_Report\lab\ollama-proxy\requests.jsonl
